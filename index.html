@@ -1,0 +1,164 @@
+<!doctype html>
+<!-- Simple example page: hard-coded flexbox grid from items-template.csv -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Business Directory</title>
+    <style>
+      /* Basic page reset */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        padding: 32px;
+        background-color: lightgray;
+      }
+
+      p {
+        font-family:
+          'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+      h3 {
+        font-weight: 300;
+        color: blue;
+      }
+
+      h1,
+      h3 {
+        font-family: Arial, sans-serif; 
+      }
+h1 {
+    color  : darkgreen;
+
+}
+      /* Flexbox grid container */
+      .grid {
+        display: flex;
+        flex-wrap: wrap; /* cards wrap to new rows */
+        gap: 16px; /* space between cards */
+        margin-top: 24px;
+      }
+
+      /* Each card is a flex item */
+      .card {
+        flex: 1 1 250px; /* grow, shrink, min width */
+        max-width: 320px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+      }
+      .card-body {
+        padding: 12px;
+      }
+        #special-card {
+  border: 3px solid darkgreen;
+}
+    
+    </style>
+  </head>
+  <body>
+    <!-- Page heading -->
+    <h1>Local Business Directory</h1>
+    <p>Small shops and services around town.</p>
+
+    <!-- Flexbox grid of businesses -->
+    <div class="grid">
+      <div class="card">
+        <img
+          src="https://picsum.photos/seed/coffee-corner/800/600"
+          alt="Coffee Corner" />
+        <div class="card-body">
+          <h3>Coffee Corner</h3>
+          <p>Cozy local cafe known for pour-over coffee and fresh pastries.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://picsum.photos/seed/green-grocer/800/600"
+          alt="Green Grocer" />
+        <div class="card-body">
+          <h3>Green Grocer</h3>
+          <p>
+            Neighborhood produce market with seasonal fruits and vegetables.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://picsum.photos/seed/book-nook/800/600"
+          alt="The Book Nook" />
+        <div class="card-body">
+          <h3>The Book Nook</h3>
+          <p>Independent bookstore with curated fiction and kids titles.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://picsum.photos/seed/fit-studio/800/600"
+          alt="Fit Studio" />
+        <div class="card-body">
+          <h3>Fit Studio</h3>
+          <p>
+            Small-group fitness classes for beginners and busy professionals.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://picsum.photos/seed/tech-stop/800/600"
+          alt="Tech Stop" />
+        <div class="card-body">
+          <h3>Tech Stop</h3>
+          <p>
+            Device accessories repair and setup help for phones and laptops.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://picsum.photos/seed/artisan-bites/800/600"
+          alt="Artisan Bites" />
+        <div class="card-body">
+          <h3>Artisan Bites</h3>
+          <p>Handmade sandwiches salads and daily soup specials.</p>
+        </div>
+      </div>
+<div class="card"id="special-card">
+  <img
+    src="https://picsum.photos/seed/business-1/800/600"
+    alt="Pet Paradise" />
+  <div class="card-body">
+    <h3>Pet Paradise</h3>
+    <p>Friendly pet store with food, toys, and supplies for your pets.</p>
+  </div>
+  </div>
+  
+<div class="card">
+  <img
+    src="https://picsum.photos/seed/business-2/800/600"
+    alt="City Bakery" />
+  <div class="card-body">
+    <h3>City Bakery</h3>
+    <p>Fresh bread, cookies, cakes, and pastries made every morning.</p>
+  </div>
+</div>
+
+</div>
+  </body>
+</html>
